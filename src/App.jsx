@@ -1,12 +1,12 @@
-import './App.css'
+import "./App.css";
+import Hero from "./components/Hero";
 
 function App() {
-
   return (
     <>
-    <h1>AniMate</h1>
+      <Hero />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
