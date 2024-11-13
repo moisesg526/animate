@@ -1,5 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+
 * {
   margin: 0;
+}
+
+h1 {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .hero {
@@ -8,11 +22,40 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-
-  height: 1000px;
+  position: relative;
+  height: 800px;
 }
 
 .logo {
-  width: 446px;
-  height: 200px;
+  width: 250px;
+  height: 100px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px 145px;
+  background: none;
+}
+
+.right-top-header {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.randomize-btn {
+  border-radius: 4px;
+  color: #fff;
+  background-color: #d7dbf7;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.hero-pitch {
+    font-size: 1.2rem;
+    width: 400px;
 }
