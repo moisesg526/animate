@@ -17,13 +17,16 @@ h2 {
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  gap: 165px;
   background-image: url("/images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   position: relative;
-  height: 800px;
+  height: 100vh;
 }
 
 .logo {
@@ -35,7 +38,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 75px 145px;
+  padding: 0px 145px;
   background: none;
 }
 
@@ -58,4 +61,5 @@ h2 {
 .hero-pitch {
     font-size: 1.2rem;
     width: 400px;
+    padding: 0 145px;
 }
