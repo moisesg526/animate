@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SuggestionCard from "./SuggestionCard";
 import "../styles/suggestions.css";
 
 function Suggestions() {
@@ -18,11 +19,20 @@ function Suggestions() {
   return (
     <div className="suggestions-body">
       <h2>How About a Few Suggestions</h2>
-      <div className="suggestion-card">
-        <div className="card-img">{anime && <img src={anime.data.images.jpg.image_url}/>}</div>
-        <div className="title">{anime && <h3>{anime.data.title}</h3>}</div>
-        <div className="synopsis">{anime && <p>{anime.data.synopsis}</p>}</div>
-      </div>
+      {anime && (
+        <>
+          <SuggestionCard
+            cardImg={<img src={anime.data.images.jpg.image_url} alt="Anime" />}
+            title={anime.data.title}
+            synopsis={anime.data.synopsis}
+          />
+          <SuggestionCard
+            cardImg={<img src={anime.data.images.jpg.image_url} alt="Anime" />}
+            title={anime.data.title}
+            synopsis={anime.data.synopsis}
+          />
+        </>
+      )}
     </div>
   );
 }

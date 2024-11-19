@@ -1,24 +1,33 @@
 .suggestions-body {
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #D7DBF7;
-    color: #fff;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d7dbf7;
+  color: #fff;
 }
 
 h2 {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 .suggestion-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 400px;
-    height: 500px;
-    border: 1px solid;
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  border: 1px solid;
+}
+
+.synopsis {
+  font-size: 1.1rem;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #d7dbf7 #fff;
 }
