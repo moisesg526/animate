@@ -7,6 +7,7 @@ function Suggestions() {
 
   const [anime1, setAnime1] = useState(null);
   const [anime2, setAnime2] = useState(null);
+//   const [like, setLike] = useState(null)
 
   useEffect(() => {
     const fetchData = async () => {
