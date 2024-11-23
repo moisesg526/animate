@@ -3,13 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #d7dbf7;
   color: #fff;
+  gap: 2rem;
 }
 
 .suggestion-cards {
   display: flex;
   gap: 2rem;
+}
+
+.like-btn {
+    color: black;
 }
 
 h2 {

@@ -7,7 +7,7 @@ function Suggestions() {
 
   const [anime1, setAnime1] = useState(null);
   const [anime2, setAnime2] = useState(null);
-//   const [like, setLike] = useState(null)
+  //   const [like, setLike] = useState(null)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +25,9 @@ function Suggestions() {
   return (
     <div className="suggestions-body">
       <h2>How About a Few Suggestions</h2>
+      <button className="randomize-btn">Randomize</button>
       <div className="suggestion-cards">
+        {/* <img src="/images/like.svg" alt="Like Button" className="like-btn" /> */}
         {anime1 && (
           <SuggestionCard
             cardImg={<img src={anime1.data.images.jpg.image_url} alt="Anime" />}

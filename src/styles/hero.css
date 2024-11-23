@@ -51,15 +51,21 @@ h2 {
 .randomize-btn {
   border-radius: 4px;
   color: #fff;
-  background-color: #d7dbf7;
+  background-color: #767ca5c3;
   padding: 15px;
+  font-size: 1.2rem;
   border: none;
   cursor: pointer;
 }
 
+.randomize-btn:active {
+  background-color: #6370c6c3;
+  box-shadow: 5px 3px 3px rgb(181, 179, 179);
+  transform: translate(0px, -4px);
+}
 
 .hero-pitch {
-    font-size: 1.2rem;
-    width: 400px;
-    padding: 0 145px;
+  font-size: 1.2rem;
+  width: 400px;
+  padding: 0 145px;
 }
