@@ -27,7 +27,6 @@ function Suggestions() {
       <h2>How About a Few Suggestions</h2>
       <button className="randomize-btn">Randomize</button>
       <div className="suggestion-cards">
-        {/* <img src="/images/like.svg" alt="Like Button" className="like-btn" /> */}
         {anime1 && (
           <SuggestionCard
             cardImg={<img src={anime1.data.images.jpg.image_url} alt="Anime" />}

@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 function SuggestionCard({ cardImg, title, synopsis }) {
   return (
     <div className="suggestion-card">
+      {/* <i className="fa-solid fa-heart like-btn"></i> */}
+      <i className="fa-regular fa-heart like-btn"></i>
       <div className="card-img">{cardImg}</div>
       <div className="title">
         <h3>{title}</h3>

@@ -25,6 +25,7 @@ h2 {
 }
 
 .suggestion-card {
+  position: relative;
   display: flex;
   gap: 1rem;
   padding: 2rem;
@@ -42,4 +43,12 @@ h2 {
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: #d7dbf7 #fff;
+}
+
+.like-btn {
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }
