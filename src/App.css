@@ -2,3 +2,9 @@
 * {
     font-family: "Balsamiq Sans", sans-serif;
 }
+
+.randomize-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

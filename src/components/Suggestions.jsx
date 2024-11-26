@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import SuggestionCard from "./SuggestionCard";
 import "../styles/suggestions.css";
-import Randomize from "./Randomize";
 
 function Suggestions() {
   const randomAnimeUrl = "https://api.jikan.moe/v4/random/anime";
 
   const [anime1, setAnime1] = useState(null);
   const [anime2, setAnime2] = useState(null);
-  //   const [like, setLike] = useState(null)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,7 +24,6 @@ function Suggestions() {
   return (
     <div className="suggestions-body">
       <h2>How About a Few Suggestions</h2>
-      <Randomize />
       <div className="suggestion-cards">
         {anime1 && (
           <SuggestionCard
