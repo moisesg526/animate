@@ -1,19 +1,22 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart as solidHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 
 function SuggestionCard({ cardImg, title, synopsis }) {
-  let heart = <i className="fa-solid fa-heart like-btn"></i>;
-  let solidHeart = <i className="fa-solid fa-heart"></i>;
-
-  const [like, setLike] = useState(heart);
+  const [like, setLike] = useState(false);
   const handleClick = () => {
-    setLike(like ? heart : solidHeart);
+    setLike(!like);
   };
   return (
     <div className="suggestion-card">
-      {/* <i className="fa-solid fa-heart like-btn"></i> */}
       <div className="like" onClick={handleClick}>
-        {like}
+        {like ? (
+          <FontAwesomeIcon icon={solidHeart} />
+        ) : (
+          <FontAwesomeIcon icon={regularHeart} />
+        )}
       </div>
       <i className="fa-regular fa-heart like-btn"></i>
       <div className="card-img">{cardImg}</div>

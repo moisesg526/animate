@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SuggestionCard from "./SuggestionCard";
 import "../styles/suggestions.css";
+import Randomize from "./Randomize";
 
 function Suggestions() {
   const randomAnimeUrl = "https://api.jikan.moe/v4/random/anime";
@@ -25,7 +26,7 @@ function Suggestions() {
   return (
     <div className="suggestions-body">
       <h2>How About a Few Suggestions</h2>
-      <button className="randomize-btn">Randomize</button>
+      <Randomize />
       <div className="suggestion-cards">
         {anime1 && (
           <SuggestionCard

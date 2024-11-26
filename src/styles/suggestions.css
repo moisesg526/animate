@@ -45,8 +45,8 @@ h2 {
   scrollbar-color: #d7dbf7 #fff;
 }
 
-.like-btn {
-  color: red;
+.like {
+  color: #0020f3c3;
   cursor: pointer;
   position: absolute;
   top: 1rem;
