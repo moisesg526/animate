@@ -16,6 +16,10 @@ h2 {
   cursor: pointer;
 }
 
+h2:active {
+  color: #c1c1c1;
+}
+
 .hero {
   display: flex;
   flex-direction: column;

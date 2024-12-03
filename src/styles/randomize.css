@@ -1,0 +1,6 @@
+.randomize-btn-container {
+    padding: 10rem ;
+    background-color: #d7dbf7;
+    display: grid;
+    place-items: center;
+}
